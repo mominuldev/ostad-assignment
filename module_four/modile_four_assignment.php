@@ -12,11 +12,15 @@ print_r($fruits); // output: ["Apple", "Mango", "Banana", "Grapes", "Orange", "P
 
 
 // 2.Write a PHP function to concatenate two strings, but with the second string starting from the end of the first string.
-function stringConcat($a, $b) {
-    return $a . substr($b, -1);
+
+function stringConcat($str1, $str2) {
+    $len1 = strlen($str1);
+    $reverse_substr1 = substr($str1, -$len1);
+    $reverse_substr2 = strrev($str2);
+    return $reverse_substr1 . $reverse_substr2;
 }
 
-echo stringConcat("Hello", "World"); // output: Hellod
+echo stringConcat("Hello", "World"); // output: HellodlroW
 
 
 // 3.Write a PHP function to remove the first and last element from an array and return the remaining elements as a new array.
