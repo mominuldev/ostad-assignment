@@ -23,6 +23,11 @@
 	$email = isset($_POST['email']) ? $_POST['email'] : '';
 
 	$person = new Person($name, $email);
+
+
+	$personTwo = new Person("Mominul Islam", "hello@mominul.me");
+
+
 	?>
 
 	<main id="main_content">
@@ -31,6 +36,7 @@
 				<h1 class="page-header__heading">Module Five Assignment</h1>
 			</div>
 		</section>
+		<!-- /.page-header -->
 
 		<section class="content-area">
 			<div class="container">
@@ -38,16 +44,24 @@
 					<form action="index.php" method="POST" class="input-form">
 						<div class="input-form__field">
 							<label for="name" class="input-form__label">Name:</label>
-							<input type="text" name="name" id="name" class="input-form__input"
-								placeholder="Enter your name">
+							<input type="text" name="name" id="name" class="input-form__input" placeholder="Enter your name">
 						</div>
 						<div class="input-form__field">
 							<label for="email" class="input-form__label">Email:</label>
-							<input type="email" name="email" id="email" class="input-form__input"
-								placeholder="Enter your email">
+							<input type="email" name="email" id="email" class="input-form__input" placeholder="Enter your email">
 						</div>
 						<input type="submit" value="Submit" class="input-form__submit">
 					</form>
+				</div>
+
+				<div class="input-form__output">
+					<h2 class="output__heading">Static Output</h2>
+					<div class="output__content">
+						<ul>
+							<li><strong>Name: </strong><?php echo $personTwo->getName(); ?></li>
+							<li><strong>Email: </strong><?php echo $personTwo->getEmail(); ?></li>
+						</ul>
+					</div>
 				</div>
 
 				<?php if( !empty($person->getName()) || !empty( $person->getEmail() ) ) :?>
@@ -64,18 +78,21 @@
 								<?php endif; ?>
 							</ul>
 						</div>
-				</div>
+					</div>
 				<?php endif; ?>
 			</div>
 			<!-- /.container -->
 		</section>
+		<!-- /.content-area -->
 	</main>
+	<!-- /#main_content -->
 
 	<footer class="site-footer">
 		<div class="container">
 			<p class="site-footer__text">© 2023 Mominul Islam</p>
 		</div>
 	</footer>
+	<!-- /.site-footer -->
 
 </body>
 </html>

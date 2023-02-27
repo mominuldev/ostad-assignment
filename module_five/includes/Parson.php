@@ -26,7 +26,3 @@ class Person {
     }
 }
 
-
-$person = new Person("John Doe", "hello@mominul.me");
-
-// echo $person->getName() . " " . $person->getEmail();
