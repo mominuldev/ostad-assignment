@@ -1,0 +1,278 @@
+body {
+	background-color: #f5f5f5;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 300;
+	line-height: 1.1;
+	color: inherit;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+ul li:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+
+ul li strong {
+	min-width: 100px;
+	display: inline-block;
+}
+
+.page-header {
+	padding: 100px 0;
+	background-color: #5cb85c;
+}
+
+.page-header__heading {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 0;
+	text-align: center;
+	color: #fff;
+}
+
+.container {
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.content-area {
+	padding: 100px 0;
+}
+
+.input-form__wrapper,
+.input-form__output {
+	background-color: #fff;
+	padding: 30px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.input-form__field {
+	margin-bottom: 20px;
+}
+
+.input-form__label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.input-form__input {
+	padding: 13px 15px;
+	border: 2px solid #ccc;
+	width: 100%;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: all 0.3s ease-in-out;
+}
+
+input:focus-visible {
+	outline: none;
+	border-color: #5cb85c;
+	box-shadow: none;
+}
+
+.input-form__submit {
+	font-family: "Josefin Sans", sans-serif;
+	padding: 16px 20px 12px;
+	background-color: #5cb85c;
+	border: 1px solid #4cae4c;
+	color: #fff;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+
+.input-form__submit:hover {
+	background-color: #4cae4c;
+}
+
+.output__heading {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.site-footer {
+	padding: 20px 0 15px;
+	background-color: #4cae4c;
+	text-align: center;
+}
+
+.site-footer__text {
+	color: #fff;
+	font-size: 18px;
+	margin: 0;
+}
+
+table td img {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.table-title h3 {
+	font-size: 30px;
+	font-weight: 700;
+}
+.table-fill {
+	background: white;
+	border-radius: 3px;
+	border-collapse: collapse;
+	padding: 5px;
+	width: 100%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	animation: float 5s infinite;
+}
+
+th {
+	color: #d5dde5;
+	background: #1b1e24;
+	border-bottom: 4px solid #9ea7af;
+	border-right: 1px solid #343a45;
+	font-size: 20px;
+	font-weight: 100;
+	padding: 15px 20px;
+	text-align: left;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	vertical-align: middle;
+}
+
+th:first-child {
+	border-top-left-radius: 3px;
+}
+
+th:last-child {
+	border-top-right-radius: 3px;
+	border-right: none;
+}
+
+tr {
+	border-top: 1px solid #c1c3d1;
+	border-bottom: 1px solid #c1c3d1;
+	color: #666b85;
+	font-size: 16px;
+	font-weight: normal;
+	text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+	background: #4e5066;
+	color: #ffffff;
+	border-top: 1px solid #22262e;
+}
+
+tr:first-child {
+	border-top: none;
+}
+
+tr:last-child {
+	border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+	background: #ebebeb;
+}
+
+tr:nth-child(odd):hover td {
+	background: #4e5066;
+}
+
+tr:last-child td:first-child {
+	border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+	border-bottom-right-radius: 3px;
+}
+
+td {
+	background: #ffffff;
+	padding: 20px;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: 300;
+	font-size: 18px;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+	border-right: 1px solid #c1c3d1;
+}
+
+td:last-child {
+	border-right: 0px;
+}
+
+th.text-left {
+	text-align: left;
+}
+
+th.text-center {
+	text-align: center;
+}
+
+th.text-right {
+	text-align: right;
+}
+
+td.text-left {
+	text-align: left;
+}
+
+td.text-center {
+	text-align: center;
+}
+
+td.text-right {
+	text-align: right;
+}
+
+.error {
+	color: red;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 5px;
+}
